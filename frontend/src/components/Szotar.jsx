@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Szotar.css'; // Import CSS file for styling
+import './Szotar.css';
 import szotarApi from '../api/szotar-api';
 
 const SzotarList = () => {
@@ -73,7 +73,9 @@ const SzotarList = () => {
 
   return (
     <div className="filtered-word-list-container">
-      <h2>Szótár</h2>
+      <header className='header'><h1>Szótár program</h1></header>
+      <p>Szótár</p>
+      <h4>Szavak</h4>
       <label htmlFor="topic-select">Téma kiválasztása:</label>
       <select id="topic-select" value={selectedTopic} onChange={handleTopicChange}>
         <option value="">All</option>
